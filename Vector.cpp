@@ -29,10 +29,10 @@ void test2()
     std::cout << "Capacity test: \n"; 
     for(int i =0;i<18;i++)
     {
-
-        std::cout << i << ") " << "mano vector: "<<  manoV.capacity()  << ", std vector: "<< originalV.capacity() << "\n"; 
         manoV.push_back(i);
         originalV.push_back(i);
+        std::cout << i << ") " << "mano vector: "<<  manoV.capacity()  << ", std vector: "<< originalV.capacity() << "\n"; 
+
     }
     
     std::cout << "\n"; 

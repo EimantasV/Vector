@@ -14,7 +14,7 @@ mano vector: 8, std vector: 8   <br>
 mano vector: 9, std vector: 9   <br>
    <br>
    <br>
-Capacity test:   <br>
+Capacity test   <br>
 0) mano vector: 1, std vector: 1   <br>
 1) mano vector: 2, std vector: 2   <br>
 2) mano vector: 4, std vector: 4   <br>

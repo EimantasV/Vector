@@ -108,7 +108,7 @@ allocation speed test:<br>
 | 100000000     | 0.870735 S         | 1.19327 S       |
 <br>
 <br>
-Studentu programos speed test:<br>
+Studentų programos speed test:<br>
 mano vector:<br>
 Naudoti strategija pirma(1), antra(2), mano sena(3): 1<br>
 Naudoti Vector(1), list(2), deque(3): 1<br>

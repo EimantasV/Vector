@@ -21,6 +21,8 @@ void test1()
         std::cout << "mano vector: " <<manoV[i] << ", std vector: " << originalV[i]<<"\n"; 
     }
     std::cout << "\n"; 
+        manoV.clear();
+    originalV.clear();
 }
 
 void test2()
@@ -37,6 +39,8 @@ void test2()
     }
     
     std::cout << "\n"; 
+        manoV.clear();
+    originalV.clear();
 }
 
 void test3()
@@ -65,6 +69,8 @@ void test3()
     }
 
     std::cout << "\n"; 
+        manoV.clear();
+    originalV.clear();
 }
 
 void test4()
@@ -86,6 +92,8 @@ void test4()
 
     std::cout << "po: " << "mano vector size: " << manoV.size() << ", std vector size: " << originalV.size() << "\n";
     std::cout << "\n"; 
+        manoV.clear();
+    originalV.clear();
 }
 void test5()
 {
@@ -124,6 +132,8 @@ void test5()
     {
         std::cout << "  std vector iterator: " << *origIt << "\n";
     }
+    manoV.clear();
+    originalV.clear();
 }
 
 void test6(int size)
@@ -154,7 +164,42 @@ void test6(int size)
 
     clock_now = std::chrono::system_clock::now();
     currentTime = float(std::chrono::duration_cast<std::chrono::microseconds>(clock_now - clock_start).count());
-    std::cout << "std vector allocation time: " << currentTime / 1000000 << " S \n";
+    std::cout << "std vector allocation time: " << currentTime / 1000000 << " S \n\n";
+    manoV.clear();
+    originalV.clear();
+}
+
+void test7()
+{
+    Vector<int> manoV;
+    std::vector<int> originalV;
+    int manoCounter = 0;
+    int stdCounter = 0;
+    int manoTemp = manoV.capacity();
+    int stdTemp = originalV.capacity();
+
+    std::cout << "Count capacity updates test: \n";
+
+    for(long long i =0;i<100000000;i++)
+    {
+        manoV.push_back(i);
+        originalV.push_back(i);
+
+        if(manoV.capacity() != manoTemp)
+        {
+            manoCounter++;
+            manoTemp = manoV.capacity();
+        }
+        if(originalV.capacity() != stdTemp)
+        {
+            stdCounter++;
+            stdTemp = originalV.capacity();
+        }
+    }
+    std::cout << "mano vector updates: " << manoCounter << ", std vector updates: " << stdCounter << "\n";
+    manoV.clear();
+    originalV.clear();
+
 }
 
 int main()
@@ -166,6 +211,8 @@ int main()
     test5(); // resize test
 
     test6(100000000); // allocation speed
+
+    test7(); // capacity update counter
     
     system("pause");
     return 0;

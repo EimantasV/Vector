@@ -15,24 +15,24 @@ mano vector: 9, std vector: 9   <br>
    <br>
    <br>
 Capacity test:   <br>
-0) mano vector: 1, std vector: 1   <br>
-1) mano vector: 2, std vector: 2   <br>
-2) mano vector: 4, std vector: 4   <br>
-3) mano vector: 4, std vector: 4   <br>
-4) mano vector: 8, std vector: 8  <br>
-5) mano vector: 8, std vector: 8  <br>
-6) mano vector: 8, std vector: 8  <br>
-7) mano vector: 8, std vector: 8  <br>
-8) mano vector: 16, std vector: 16  <br>
-9) mano vector: 16, std vector: 16  <br>
-10) mano vector: 16, std vector: 16  <br>
-11) mano vector: 16, std vector: 16  <br>
-12) mano vector: 16, std vector: 16  <br>
-13) mano vector: 16, std vector: 16  <br>
-14) mano vector: 16, std vector: 16  <br>
-15) mano vector: 16, std vector: 16  <br>
-16) mano vector: 32, std vector: 32  <br>
-17) mano vector: 32, std vector: 32  <br>
+0: mano vector: 1, std vector: 1   <br>
+1: mano vector: 2, std vector: 2   <br>
+2: mano vector: 4, std vector: 4   <br>
+3: mano vector: 4, std vector: 4   <br>
+4: mano vector: 8, std vector: 8  <br>
+5: mano vector: 8, std vector: 8  <br>
+6: mano vector: 8, std vector: 8  <br>
+7: mano vector: 8, std vector: 8  <br>
+8: mano vector: 16, std vector: 16  <br>
+9: mano vector: 16, std vector: 16  <br>
+10: mano vector: 16, std vector: 16  <br>
+11: mano vector: 16, std vector: 16  <br>
+12: mano vector: 16, std vector: 16  <br>
+13: mano vector: 16, std vector: 16  <br>
+14: mano vector: 16, std vector: 16  <br>
+15: mano vector: 16, std vector: 16  <br>
+16: mano vector: 32, std vector: 32  <br>
+17: mano vector: 32, std vector: 32  <br>
   <br>
   <br>
 iterator print all test:   <br>
@@ -96,6 +96,8 @@ iterator print after resize:  <br>
   std vector iterator: 2  <br>
   std vector iterator: 3  <br>
   std vector iterator: 4 <br>
+  <br>
+allocation speed test:<br>
 <br>
 | elementų sk.  | mano vector time   | std vector time |
 | ------------- | ------------------ | --------------- |

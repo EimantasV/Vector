@@ -3,6 +3,7 @@
 #include <algorithm>
 #include "Vector.h"
 #include <vector>
+#include <chrono>
 
 void test1()
 {
@@ -125,6 +126,36 @@ void test5()
     }
 }
 
+void test6(int size)
+{
+    Vector<int> manoV;
+    std::vector<int> originalV;
+
+    std::cout << "\nallocation speed test: \n";
+    std:: cout << size << " elementu: \n";
+    auto clock_start = std::chrono::system_clock::now();
+
+    for(int i =0;i<size;i++)
+    {
+        manoV.push_back(i);
+    }
+
+    auto clock_now = std::chrono::system_clock::now();
+    float currentTime = float(std::chrono::duration_cast<std::chrono::microseconds>(clock_now - clock_start).count());
+    std::cout << "mano vector allocation time: " << currentTime / 1000000 << " S \n";
+
+
+    clock_start = std::chrono::system_clock::now();
+
+    for(int i =0;i<size;i++)
+    {
+        originalV.push_back(i);
+    }
+
+    clock_now = std::chrono::system_clock::now();
+    currentTime = float(std::chrono::duration_cast<std::chrono::microseconds>(clock_now - clock_start).count());
+    std::cout << "std vector allocation time: " << currentTime / 1000000 << " S \n";
+}
 
 int main()
 {
@@ -133,6 +164,8 @@ int main()
     test3(); // iterator test
     test4(); // clear test
     test5(); // resize test
+
+    test6(100000000); // allocation speed
     
     system("pause");
     return 0;

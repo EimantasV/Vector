@@ -112,3 +112,22 @@ private:
     iterator _first; // index 0
     iterator _last;
 };
+
+template <class T>
+typename Vector<T>::iterator Vector<T>::erase(iterator first, iterator last)
+{
+    int i = 0;
+    int temp = 0;
+    auto it = (*this).begin();
+    for (it; it != first; it++, i++)
+        ;
+    for (it = first; it != last; it++, temp++, i++)
+        ;
+    for (auto it = last; it != (*this).end(); it++, i++)
+        arr[i - temp] = arr[i];
+    current -= temp;
+    _first = arr;
+    _last = arr+current;
+    
+    return last;
+}

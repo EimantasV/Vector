@@ -96,3 +96,12 @@ iterator print after resize:  <br>
   std vector iterator: 2  <br>
   std vector iterator: 3  <br>
   std vector iterator: 4 <br>
+<br>
+| elementų sk.  | mano vector time   | std vector time |
+| ------------- | ------------------ | --------------- |
+| 10000         | 0 S                | 0 S             |
+| 100000        | 0.001001 S         | 0.001 S         |
+| 1000000       | 0.007002 S         | 0.011003 S      |
+| 10000000      | 0.083503 S         | 0.118026 S      |
+| 100000000     | 0.870735 S         | 1.19327 S       |
+

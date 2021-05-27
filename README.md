@@ -104,4 +104,25 @@ iterator print after resize:  <br>
 | 1000000       | 0.007002 S         | 0.011003 S      |
 | 10000000      | 0.083503 S         | 0.118026 S      |
 | 100000000     | 0.870735 S         | 1.19327 S       |
-
+<br>
+<br>
+Studentu programos speed test:<br>
+mano vector:<br>
+Naudoti strategija pirma(1), antra(2), mano sena(3): 1<br>
+Naudoti Vector(1), list(2), deque(3): 1<br>
+Failo pavadinimas: Studentai100000.txt<br>
+Failas nuskaitytas per: 1.13525 S <br>
+Studentai atskirti pagal rezultatus per: 0.144033 S <br>
+Vykeliai surasyti i faila per: 1.81341 S <br>
+Nevykeliai surasyti i faila per: 1.28782 S <br>
+Uzduotis atlikta per: 4.38351 S<br>
+<br>
+std vector:<br>
+Naudoti strategija pirma(1), antra(2), mano sena(3): 1<br>
+Naudoti Vector(1), list(2), deque(3): 1<br>
+Failo pavadinimas: Studentai100000.txt<br>
+Failas nuskaitytas per: 1.07624 S <br>
+Studentai atskirti pagal rezultatus per: 0.147033 S <br>
+Vykeliai surasyti i faila per: 1.84841 S <br>
+Nevykeliai surasyti i faila per: 1.30129 S <br>
+Uzduotis atlikta per: 4.37398 S<br>

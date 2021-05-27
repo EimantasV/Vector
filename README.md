@@ -128,3 +128,9 @@ Studentai atskirti pagal rezultatus per: 0.147033 S <br>
 Vykeliai surasyti i faila per: 1.84841 S <br>
 Nevykeliai surasyti i faila per: 1.30129 S <br>
 Uzduotis atlikta per: 4.37398 S<br>
+<br>
+<br>
+Count capacity updates test:<br>
+mano vector updates: 27, std vector updates: 28<br>
+<br>
+pastaba: Vector turi 1 mažiau updates, nes pradžioje yra inicializuotas su 1 capacity, kai std::vector pradeda nuo 0.<br>
